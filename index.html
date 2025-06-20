@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculate My Dahej</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glitter">Calculate My Dahej 💰</h1>
+    <form id="dahejForm">
+      <div class="section">
+        <label>Naam:</label>
+        <input type="text" name="naam" required>
+
+        <label>Pita Ji Ka Naam:</label>
+        <input type="text" name="pitaNaam" required>
+
+        <label>Mata Ji Ka Naam:</label>
+        <input type="text" name="mataNaam" required>
+
+        <label>Kitna Padhe Ho?</label>
+        <select name="education">
+          <option>B.Tech without job</option>
+          <option>B.A. + UPSC dream</option>
+          <option>12th fail par sapne bade</option>
+          <option>PhD in Timepass</option>
+          <option>MBA - Maal Bank ATM</option>
+          <option>CA dropout, DJ full-time</option>
+          <option>Engineer by chance, YouTuber by choice</option>
+          <option>Diploma with dard</option>
+          <option>Law - par andar se gangster</option>
+          <option>MBBS in memes</option>
+          <option>Double dropout with attitude</option>
+          <option>Certified scammer</option>
+          <option>IAS aspirant since 10 saal</option>
+          <option>Jobless with confidence</option>
+          <option>Startup founder (bas idea hai)</option>
+        </select>
+
+        <label>Monthly Income (₹):</label>
+        <input type="number" name="income" required>
+
+        <label>Property Kitni Hai?</label>
+        <select name="property">
+          <option>Ek zameen ka tukda</option>
+          <option>2 BHK sabji mandi ke paas</option>
+          <option>Gaon mein 5 beegah</option>
+          <option>Nana ka haveli (case chal raha hai)</option>
+          <option>Property to hai, par illegal</option>
+          <option>Ek fake registry</option>
+          <option>Jhopdi on rent</option>
+          <option>Parking space ka malik</option>
+          <option>Zameen jahan manzil hai</option>
+          <option>Plot with plot twist</option>
+          <option>3 acre mein jungle</option>
+          <option>Khaali plot with buffalo</option>
+          <option>Metro ke neeche kuch bhi</option>
+          <option>Sab bech chuke hain</option>
+          <option>Landlord in dreams</option>
+        </select>
+
+        <label>Pita Ji Ka Profession:</label>
+        <select name="pitaProfession">
+          <option>Sabji Wale</option>
+          <option>Property Dealer</option>
+          <option>Railway Retired</option>
+          <option>Rickshaw King</option>
+          <option>LIC Agent full force</option>
+          <option>Desi Jugaad Udyog</option>
+          <option>Neta without party</option>
+          <option>Thekedaar of the year</option>
+          <option>Not working but chilling</option>
+          <option>Government employee (power ka nasha)</option>
+          <option>Police mein par bribe ka aadat</option>
+          <option>Paan shop CEO</option>
+          <option>Courier wala with style</option>
+          <option>Farmer but rich</option>
+          <option>Fake builder</option>
+          <option>Makan pe Kabzaa</option>
+        </select>
+
+        <label>Samaj Mein Pehchaan:</label>
+        <select name="reputation">
+          <option>Colony ke President</option>
+          <option>WhatsApp group admin</option>
+          <option>Pandit ji ke chela</option>
+          <option>Mukhiya banne ke sapne</option>
+          <option>Thoda bahut maar kha chuke</option>
+          <option>Shaadi mein DJ wale ke cousin</option>
+          <option>Shaadi mein khana inspect karte ho</option>
+          <option>Mohalle ke gossip king</option>
+          <option>Marriage broker (side hustle)</option>
+          <option>Sharma ji ke rishtedaar</option>
+          <option>Uncle of everyone</option>
+          <option>Ward ke chupa rustom</option>
+          <option>Politics ka keeda</option>
+          <option>BJP ke piche line mein</option>
+          <option>Facebook verified (jugaad se)</option>
+        </select>
+
+        <label>Hobbies:</label>
+        <select name="hobbies">
+          <option>Free mein ghoomna</option>
+          <option>Gali dena pro level</option>
+          <option>Shaadi mein khaana todna</option>
+          <option>Gym jaana insta post ke liye</option>
+          <option>Politics me ghusna bina reason</option>
+          <option>Bike ka silencer todna</option>
+          <option>Gaon mein dhoom machana</option>
+          <option>Nukkad pe debate</option>
+          <option>Shaadi card design karna</option>
+          <option>Parosi ki ladki dekhna</option>
+          <option>DJ par naachna</option>
+          <option>Free data mein reel banana</option>
+          <option>Mummy ke paise se date par jana</option>
+          <option>Free trip mein chhapri giri</option>
+          <option>Poetry likhna sad breakup ke baad</option>
+        </select>
+      </div>
+      <button type="submit">Calculate Dahej</button>
+    </form>
+
+    <div id="result" class="result"></div>
+    <div id="dahejResume" class="resume"></div>
+    <button id="downloadPDF" style="display:none;">📄 Download PDF</button>
+
+    <footer>
+      <p class="footer-poem">
+        Website toh sirf ek chhalava hai,<br>
+        asli hisaab kitaab toh Atharv harami ne kiya hai,<br>
+        meri gaand maarke 💀<br>
+        <i>- Calculated with zero shame™</i>
+      </p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #fff;
+  animation: backgroundGlow 10s infinite alternate;
+  font-size: 22px; /* Base font increased */
+}
+
+@keyframes backgroundGlow {
+  0% { background-color: #000; }
+  50% { background-color: #12002f; }
+  100% { background-color: #1c003b; }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.9);
+  background: rgba(20, 20, 20, 0.9);
+}
+
+h1.glitter {
+  font-family: 'Rubik Glitch', cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  animation: neonGlow 1.5s infinite alternate;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 15px #f0f, 0 0 30px #f0f, 0 0 45px #0ff;
+  }
+  100% {
+    text-shadow: 0 0 25px #0ff, 0 0 50px #0ff, 0 0 80px #f0f;
+  }
+}
+
+.section label {
+  display: block;
+  margin: 20px 0 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+input, select {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-size: 1.4rem;
+  box-shadow: 0 0 15px #f0f;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  border: none;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff00cc;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #00ffff;
+}
+
+.result, .resume {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(50, 0, 50, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.result h2 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 20px #00ffcc;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+.footer-poem {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #ffeb3b;
+  text-shadow: 0 0 10px #ffeb3b;
+  margin-top: 20px;
+}
+
+/* 🌐 Mobile Responsiveness */
+@media (max-width: 768px) {
+  h1.glitter {
+    font-size: 2.5rem;
+  }
+
+  .section label {
+    font-size: 1.2rem;
+  }
+
+  input, select {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 14px;
+  }
+
+  .result, .resume {
+    font-size: 1.3rem;
+  }
+
+  .result h2 {
+    font-size: 2rem;
+  }
+
+  .footer-poem {
+    font-size: 1rem;
+  }
+}
